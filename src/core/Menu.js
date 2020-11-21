@@ -10,6 +10,14 @@ const Menu = ({ history }) => {
     const [active, handleClick] = useState(false);
     const toggling =()=>{
         handleClick(!active)
+        if(active==false){
+            document.body.style='background:black; color:white';
+            //document.body.style='color:white';
+        }
+        else{
+            document.body.style='background-color:white; color:black';
+            //document.body.style='color:black';
+        }
     }
     return(
         <nav className="navbar navbar-dark bg-primary">

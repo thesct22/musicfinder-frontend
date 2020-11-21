@@ -40,7 +40,7 @@ export class SpotifyArtistRecent extends Component {
                             <div className="card-body">
                                 
                                 <a className="card-text" href={splink}>
-                                    {splink}
+                                    <p>{splink}</p>
                                 </a>
                                 <br />
                                 <p className="font-italic mark">
@@ -107,7 +107,7 @@ export class SpotifyArtistPopular extends Component {
                             <div className="card-body">
                                 
                                 <a className="card-text" href={splink}>
-                                    {splink}
+                                    <p>{splink}</p>
                                 </a>
                                 <br />
                                 <p className="font-italic mark">
