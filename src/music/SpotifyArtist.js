@@ -61,7 +61,7 @@ export class SpotifyArtistRecent extends Component {
         return (
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!posts.length? <BoxLoading />:"Recently tweeted Spotify Artists"}
+                    {!Object.keys(posts).length? <BoxLoading />:"Recently tweeted Spotify Artists"}
                 </div>
                 {this.renderPosts(posts)}
             </div>
@@ -128,7 +128,7 @@ export class SpotifyArtistPopular extends Component {
         return (
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!posts.length? <BoxLoading />:"Popular tweets on Spotify Artist6s this week"}
+                    {!Object.keys(posts).length? <BoxLoading />:"Popular tweets on Spotify Artist6s this week"}
                 </div>
                 {this.renderPosts(posts)}
             </div>

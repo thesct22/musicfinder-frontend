@@ -61,9 +61,10 @@ export class SoundcloudRecent extends Component {
         return (
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!posts.length? <BoxLoading />:"Recently tweeted Soundcloud Songs"}
+                    {!Object.keys(posts).length? <BoxLoading />:"Recently tweeted Soundcloud Songs"}
                 </div>
                 {this.renderPosts(posts)}
+                {console.log(posts)}
             </div>
         );
     }
@@ -128,7 +129,7 @@ export class SoundcloudPopular extends Component {
         return (
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!posts.length? <BoxLoading />:"popular tweets on Soundcloud Songs this week"}
+                    {!Object.keys(posts).length? <BoxLoading />:"popular tweets on Soundcloud Songs this week"}
                 </div>
                 {this.renderPosts(posts)}
             </div>
