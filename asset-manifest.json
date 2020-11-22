@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/musicfinder-frontend/static/css/main.bf6939a2.chunk.css",
-    "main.js": "/musicfinder-frontend/static/js/main.17ec4729.chunk.js",
-    "main.js.map": "/musicfinder-frontend/static/js/main.17ec4729.chunk.js.map",
+    "main.js": "/musicfinder-frontend/static/js/main.8d0e5890.chunk.js",
+    "main.js.map": "/musicfinder-frontend/static/js/main.8d0e5890.chunk.js.map",
     "runtime-main.js": "/musicfinder-frontend/static/js/runtime-main.2abbbd5c.js",
     "runtime-main.js.map": "/musicfinder-frontend/static/js/runtime-main.2abbbd5c.js.map",
     "static/css/2.71340c29.chunk.css": "/musicfinder-frontend/static/css/2.71340c29.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.71340c29.chunk.css",
     "static/js/2.47f01c44.chunk.js",
     "static/css/main.bf6939a2.chunk.css",
-    "static/js/main.17ec4729.chunk.js"
+    "static/js/main.8d0e5890.chunk.js"
   ]
 }
