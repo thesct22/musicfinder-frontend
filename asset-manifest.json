@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/musicfinder-frontend/static/css/main.bf6939a2.chunk.css",
+    "main.js": "/musicfinder-frontend/static/js/main.17ec4729.chunk.js",
+    "main.js.map": "/musicfinder-frontend/static/js/main.17ec4729.chunk.js.map",
+    "runtime-main.js": "/musicfinder-frontend/static/js/runtime-main.2abbbd5c.js",
+    "runtime-main.js.map": "/musicfinder-frontend/static/js/runtime-main.2abbbd5c.js.map",
+    "static/css/2.71340c29.chunk.css": "/musicfinder-frontend/static/css/2.71340c29.chunk.css",
+    "static/js/2.47f01c44.chunk.js": "/musicfinder-frontend/static/js/2.47f01c44.chunk.js",
+    "static/js/2.47f01c44.chunk.js.map": "/musicfinder-frontend/static/js/2.47f01c44.chunk.js.map",
+    "index.html": "/musicfinder-frontend/index.html",
+    "static/css/2.71340c29.chunk.css.map": "/musicfinder-frontend/static/css/2.71340c29.chunk.css.map",
+    "static/css/main.bf6939a2.chunk.css.map": "/musicfinder-frontend/static/css/main.bf6939a2.chunk.css.map",
+    "static/js/2.47f01c44.chunk.js.LICENSE.txt": "/musicfinder-frontend/static/js/2.47f01c44.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/musicfinder-frontend/static/media/arrow_right.0897f985.svg",
+    "static/media/basket.5477d4e3.png": "/musicfinder-frontend/static/media/basket.5477d4e3.png",
+    "static/media/all.min.css": "/musicfinder-frontend/static/media/fa-solid-900.46fdbd2d.woff",
+    "static/media/toggle.css": "/musicfinder-frontend/static/media/sun.fe1ba0dd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2abbbd5c.js",
+    "static/css/2.71340c29.chunk.css",
+    "static/js/2.47f01c44.chunk.js",
+    "static/css/main.bf6939a2.chunk.css",
+    "static/js/main.17ec4729.chunk.js"
+  ]
+}
