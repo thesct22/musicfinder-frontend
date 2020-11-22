@@ -48,7 +48,7 @@ class Home extends Component{
                 {eegs?null:window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
                 <div className="mt-5 pt-5 px-5 container border border-info">
                     <h2 onDoubleClick={()=>this.setState({eeg3:0})}className="text-info">Welcome to TweetSongs</h2>
-                    <p className="lead">Find what songs on souncloud were tweeted the most recently or got most popular 
+                    <p className="lead">Find what songs on Soundcloud were tweeted the most recently or got most popular 
                         or which playlists or artists profile on Spotify were tweeted the most recently</p>
                     <p className="lead">Oh btw, we've got {" "}<a onClick={()=>this.setState({eeg1:0})}className="red-text"> {eegs} </a>{" "} 
                         more Easter Eggs for you to discover on this box</p>
