@@ -12,12 +12,12 @@ const MainRouter = () => (
         <Home/>
         <Switch>
             <Route exact path="/" />
-            <Route exact path="/spotify/artists/recent" component={SpotifyArtistRecent} />
-            <Route exact path="/spotify/artists/popular" component={SpotifyArtistPopular} />
-            <Route exact path="/spotify/playlists/recent" component={SpotifyPlaylistsRecent} />
-            <Route exact path="/spotify/playlists/popular" component={SpotifyPlaylistsPopular} />
-            <Route exact path="/soundcloud/recent" component={SoundcloudRecent} />
-            <Route exact path="/soundcloud/popular" component={SoundcloudPopular} />
+            <Route exact path="/musicfinder-frontend/spotify/artists/recent" component={SpotifyArtistRecent} />
+            <Route exact path="/musicfinder-frontend/spotify/artists/popular" component={SpotifyArtistPopular} />
+            <Route exact path="/musicfinder-frontend/spotify/playlists/recent" component={SpotifyPlaylistsRecent} />
+            <Route exact path="/musicfinder-frontend/spotify/playlists/popular" component={SpotifyPlaylistsPopular} />
+            <Route exact path="/musicfinder-frontend/soundcloud/recent" component={SoundcloudRecent} />
+            <Route exact path="/musicfinder-frontend/soundcloud/popular" component={SoundcloudPopular} />
         </Switch>
         
     </div>

@@ -14,8 +14,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/")}
-                        to="/"
+                        style={isActive(history, "/musicfinder-frontend")}
+                        to="/musicfinder-frontend/"
                     >
                         Home
                     </Link>
@@ -24,8 +24,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/soundcloud/recent")}
-                        to="/soundcloud/recent"
+                        style={isActive(history, "/musicfinder-frontend/soundcloud/recent")}
+                        to="/musicfinder-frontend/soundcloud/recent"
                     >
                         Recent Soundcloud
                     </Link>
@@ -34,8 +34,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/soundcloud/popular")}
-                        to="/soundcloud/popular"
+                        style={isActive(history, "/musicfinder-frontend/soundcloud/popular")}
+                        to="/musicfinder-frontend/soundcloud/popular"
                     >
                         Popular Soundcloud
                     </Link>
@@ -44,8 +44,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/spotify/artists/recent")}
-                        to="/spotify/artists/recent"
+                        style={isActive(history, "/musicfinder-frontend/spotify/artists/recent")}
+                        to="/musicfinder-frontend/spotify/artists/recent"
                     >
                         Recent Spotify Artists
                     </Link>
@@ -54,8 +54,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/spotify/artists/popular")}
-                        to="/spotify/artists/popular"
+                        style={isActive(history, "/musicfinder-frontend/spotify/artists/popular")}
+                        to="/musicfinder-frontend/spotify/artists/popular"
                     >
                         Popular Spotify Artists
                     </Link>
@@ -64,8 +64,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/spotify/playlists/recent")}
-                        to="/spotify/playlists/recent"
+                        style={isActive(history, "/musicfinder-frontend/spotify/playlists/recent")}
+                        to="/musicfinder-frontend/spotify/playlists/recent"
                     >
                         Recent Spotify Playlists
                     </Link>
@@ -74,8 +74,8 @@ const Menu = ({ history }) => {
                 <li className="nav-item">
                     <Link
                         className="nav-link"
-                        style={isActive(history, "/spotify/playlists/popular")}
-                        to="/spotify/playlists/popular"
+                        style={isActive(history, "/musicfinder-frontend/spotify/playlists/popular")}
+                        to="/musicfinder-frontend/spotify/playlists/popular"
                     >
                         Popular Spotify Playlists
                     </Link>
