@@ -1,24 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import "../toggle.css";
 const isActive = (history, path) => {
-    if (history.location.pathname === path) return { color: "#ff9900" };
+    if (history.location.pathname === path) return { color: "#000000" };
     else return { color: "#ffffff" };
 };
 
 const Menu = ({ history }) => {
-    const [active, handleClick] = useState(false);
-    const toggling =()=>{
-        handleClick(!active)
-        if(active==false){
-            document.body.style='background:black; color:white';
-            //document.body.style='color:white';
-        }
-        else{
-            document.body.style='background-color:white; color:black';
-            //document.body.style='color:black';
-        }
-    }
     return(
         <nav className="navbar navbar-dark bg-primary">
         
@@ -93,16 +81,7 @@ const Menu = ({ history }) => {
                     </Link>
                 </li> 
             </ul>
-            <div className="ml-auto">
-            <label className="switch" v-if="option.icon && option.icon === 'mute'">
-            <input
-                type="checkbox"
-                checked={active}
-                onChange={()=>toggling()}           
-            />      
-            <span className="slider round"></span>
-            </label>
-            </div>
+            
         </nav>
     )
 }

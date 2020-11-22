@@ -9,8 +9,9 @@ import {SoundcloudPopular,SoundcloudRecent} from "../music/SoundcloudSongs.js";
 const MainRouter = () => (
     <div>
         <Menu />
+        <Home/>
         <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" />
             <Route exact path="/spotify/artists/recent" component={SpotifyArtistRecent} />
             <Route exact path="/spotify/artists/popular" component={SpotifyArtistPopular} />
             <Route exact path="/spotify/playlists/recent" component={SpotifyPlaylistsRecent} />

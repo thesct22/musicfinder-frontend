@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { list } from "./apiMusic";
-import { BoxLoading } from 'react-loadingg';
+import { SemipolarLoading } from 'react-loadingg';
 
 export class SoundcloudRecent extends Component {
     constructor() {
@@ -36,16 +36,12 @@ export class SoundcloudRecent extends Component {
                     const occurance= posts[post];
                     
                     return (
-                        <div className="card col-md-4" key={i}>
+                        <div className="card text-white bg-secondary mb-3 mr-3" key={i} style={{width: "20rem", height:"20rem"}}>
+                            <div class="card-header">{occurance}/1000 tweets</div>
                             <div className="card-body">
-                                
-                                <a className="card-text" href={splink}>
+                                <a className="card-text text-white" href={splink}>
                                     <p>{splink}</p>
                                 </a>
-                                <br />
-                                <p className="font-italic mark">
-                                    Occures {" "} {occurance} {" "} times
-                                </p>
                             </div>
                         </div>
                     );
@@ -61,7 +57,8 @@ export class SoundcloudRecent extends Component {
         return (
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!Object.keys(posts).length? <BoxLoading />:"Recently tweeted Soundcloud Songs"}
+                    {!Object.keys(posts).length? <SemipolarLoading size="large" style={{position:"relative", marginLeft:"auto",marginRight:"auto",bottom:10}} />:
+                    <div className="h3-responsive">Recently tweeted Soundcloud Songs"</div>}
                 </div>
                 {this.renderPosts(posts)}
                 {console.log(posts)}
@@ -104,16 +101,12 @@ export class SoundcloudPopular extends Component {
                     const occurance= posts[post];
                     
                     return (
-                        <div className="card col-md-4" key={i}>
+                        <div className="card text-white bg-secondary mb-3 mr-3" key={i} style={{width: "20rem", height:"20rem"}}>
+                            <div class="card-header">{occurance}/1000 tweets</div>
                             <div className="card-body">
-                                
-                                <a className="card-text" href={splink}>
+                                <a className="card-text text-white" href={splink}>
                                     <p>{splink}</p>
                                 </a>
-                                <br />
-                                <p className="font-italic mark">
-                                    Occures {" "} {occurance} {" "} times
-                                </p>
                             </div>
                         </div>
                     );
@@ -128,8 +121,9 @@ export class SoundcloudPopular extends Component {
         const { posts } = this.state;
         return (
             <div className="container">
-                <div className="mt-5 mb-5">
-                    {!Object.keys(posts).length? <BoxLoading />:"popular tweets on Soundcloud Songs this week"}
+                <div className="mt-5 mb-5 pt-5 pb-5">
+                    {!Object.keys(posts).length? <SemipolarLoading size="large" style={{position:"relative", marginLeft:"auto",marginRight:"auto",bottom:10}} />:
+                    <div className="h3-responsive">Popular tweets on Soundcloud Songs this week</div>}
                 </div>
                 {this.renderPosts(posts)}
             </div>

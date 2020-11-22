@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { list } from "./apiMusic";
-import { BoxLoading } from 'react-loadingg';
+import { SemipolarLoading } from 'react-loadingg';
 
 export class SpotifyPlaylistsRecent extends Component {
     constructor() {
@@ -36,16 +36,12 @@ export class SpotifyPlaylistsRecent extends Component {
                     const occurance= posts[post];
                     
                     return (
-                        <div className="card col-md-4" key={i}>
+                        <div className="card text-white bg-secondary mb-3 mr-3" key={i} style={{width: "20rem", height:"20rem"}}>
+                            <div class="card-header">{occurance}/1000 tweets</div>
                             <div className="card-body">
-                                
-                                <a className="card-text" href={splink}>
+                                <a className="card-text text-white" href={splink}>
                                     <p>{splink}</p>
                                 </a>
-                                <br />
-                                <p className="font-italic mark">
-                                    Occures {" "} {occurance} {" "} times
-                                </p>
                             </div>
                         </div>
                     );
@@ -62,7 +58,8 @@ export class SpotifyPlaylistsRecent extends Component {
             
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!Object.keys(posts).length? <BoxLoading />:"Recently tweeted Spotify Playlists"}
+                    {!Object.keys(posts).length? <SemipolarLoading size="large" style={{position:"relative", marginLeft:"auto",marginRight:"auto",bottom:10}} />:
+                    <div className="h3-responsive">Recently tweeted Spotify Playlists</div>}
                 </div>
                 {this.renderPosts(posts)}
             </div>
@@ -104,16 +101,12 @@ export class SpotifyPlaylistsPopular extends Component {
                     const occurance= posts[post];
                     
                     return (
-                        <div className="card col-md-4" key={i}>
+                        <div className="card text-white bg-secondary mb-3 mr-3" key={i} style={{width: "20rem", height:"20rem"}}>
+                            <div class="card-header">{occurance}/1000 tweets</div>
                             <div className="card-body">
-                                
-                                <a className="card-text" href={splink}>
+                                <a className="card-text text-white" href={splink}>
                                     <p>{splink}</p>
                                 </a>
-                                <br />
-                                <p className="font-italic mark">
-                                    Occures {" "} {occurance} {" "} times
-                                </p>
                             </div>
                         </div>
                     );
@@ -129,7 +122,8 @@ export class SpotifyPlaylistsPopular extends Component {
         return (
             <div className="container">
                 <div className="mt-5 mb-5">
-                    {!Object.keys(posts).length? <BoxLoading />:"Popular tweets with Spotify Playlists this week"}
+                    {!Object.keys(posts).length? <SemipolarLoading size="large" style={{position:"relative", marginLeft:"auto",marginRight:"auto",bottom:10}} />:
+                        <div className="h3-responsive">Popular tweets with Spotify Playlists this week</div>}
                 </div>
                 {this.renderPosts(posts)}
             </div>
