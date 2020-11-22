@@ -17,3 +17,4 @@ for adding to github pages, edit package.json->homepage and run
 ```shell
 npm run deploy
 ```
+container availbale on [Docker Hub] (https://hub.docker.com/repository/docker/thesct22/musicfinder-frontend)
