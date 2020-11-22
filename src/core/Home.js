@@ -45,7 +45,7 @@ class Home extends Component{
         var eegs=eeg1+eeg2+eeg3+eeg4;
         return(
             <div>
-                
+                {eegs?null:window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
                 <div className="mt-5 pt-5 px-5 container border border-info">
                     <h2 onDoubleClick={()=>this.setState({eeg3:0})}className="text-info">Welcome to TweetSongs</h2>
                     <p className="lead">Find what songs on souncloud were tweeted the most recently or got most popular 
