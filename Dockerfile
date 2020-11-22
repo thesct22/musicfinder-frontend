@@ -1,0 +1,6 @@
+FROM nginx:stable
+WORKDIR /etc/nginx/conf.d
+COPY default.conf default.conf
+WORKDIR /usr/share/nginx/html
+COPY /build .
+EXPOSE 80
